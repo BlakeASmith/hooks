@@ -66,6 +66,7 @@ def after(func):
         func_result = func(*args, **kwargs)
         run = forward_params(func, *args, **kwargs, result = func_result)
         result = [run(f) for f in wrapper.post_exec]
+        return func_result
     wrapper.post_exec = []
 
     # create a decorator which adds a function to the exec list

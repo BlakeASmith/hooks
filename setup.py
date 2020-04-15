@@ -8,7 +8,7 @@ readme = (here / 'README.md').read_text()
 
 setup(
         name='createhook',
-        version="0.0.4",
+        version="0.0.1",
         description='create hooks for functions',
         long_description=readme,
         long_description_content_type='text/markdown',
